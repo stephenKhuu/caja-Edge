@@ -1419,7 +1419,7 @@ var Domado = (function() {
     // TODO(ihab.awad): Does this work on IE, where console output
     // goes to a DOM node?
     function assert(cond) {
-      if (!cond) {
+      if (!cond && navigator.userAgent.indexOf('Edge') == -1) {
         if (typeof console !== 'undefined') {
           console.error('Domado: assertion failed');
           console.trace();

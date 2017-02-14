@@ -5117,29 +5117,6 @@ var ses;
       tests: ['test/built-ins/String/prototype/replace/S15.5.4.11_A12.js']
     },
     {
-      id: 'CANT_GOPD_CALLER',
-      description: 'getOwnPropertyDescriptor on strict "caller" throws',
-      test: test_CANT_GOPD_CALLER,
-      repair: void 0,
-      preSeverity: severities.SAFE_SPEC_VIOLATION,
-      canRepair: false,  // Long-dead bug, not worth keeping old repair around
-      urls: ['https://connect.microsoft.com/IE/feedback/details/' +
-               '685436/getownpropertydescriptor-on-strict-caller-throws'],
-      sections: ['15.2.3.3', '13.2', '13.2.3'],
-      tests: ['test/language/statements/function/S13.2_A6_T1.js']
-    },
-    {
-      id: 'CANT_HASOWNPROPERTY_CALLER',
-      description: 'strict_function.hasOwnProperty("caller") throws',
-      test: test_CANT_HASOWNPROPERTY_CALLER,
-      repair: void 0,
-      preSeverity: severities.SAFE_SPEC_VIOLATION,
-      canRepair: false,  // Long-dead bug, not worth keeping old repair around
-      urls: ['https://bugs.webkit.org/show_bug.cgi?id=63398#c3'],
-      sections: ['15.2.4.5', '13.2', '13.2.3'],
-      tests: ['test/language/statements/function/S13.2_A7_T1.js']
-    },
-    {
       id: 'CANT_IN_CALLER',
       description: 'Cannot "in" caller on strict function',
       test: test_CANT_IN_CALLER,
